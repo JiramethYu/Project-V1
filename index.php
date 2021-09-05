@@ -8,7 +8,7 @@
 <body>
 <h1>62101456 Jirameth Yukachain</h1>
  <?php
-$api_url = 'https://api.thingspeak.com/channels/1491788/feeds.json?results=1';
+$api_url = 'https://api.thingspeak.com/channels/1491788/feeds.json?api_key=74VCZK50UOXG0HO4&results=1';
 $json_data = file_get_contents($api_url);
 $response_data = json_decode($json_data);
 $user_data = $response_data->feeds;
