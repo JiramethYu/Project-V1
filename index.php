@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <meta http-equiv="refresh" content="15; url="<?php echo $_SERVER['PHP_SELF']; ?>">
  </head>
 										   
 <body>
-<h1>62101456 Jirameth Yukachain</h1>
+<h1>62101456</h1>
  <?php
-$api_url = ' https://api.thingspeak.com/channels/1497866/feeds.json?results=1';
+$api_url = ' https://api.thingspeak.com/channels/1497866/feeds.json?results=2';
 $json_data = file_get_contents($api_url);
 $response_data = json_decode($json_data);
 $user_data = $response_data->feeds;
